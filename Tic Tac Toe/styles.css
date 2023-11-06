@@ -1,0 +1,13 @@
+table {
+    width: 80vh;
+    height: 80vh;
+    background-color: red;
+}
+body{  
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px; 
+    display: flex;
+    align-items: center;
+}
