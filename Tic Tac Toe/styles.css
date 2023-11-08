@@ -1,13 +1,16 @@
 table {
     width: 80vh;
     height: 80vh;
-    background-color: red;
 }
+tr:nth-child(0) td:nth-child(0) {
+    background-color: lightblue;
+  }
 body{  
     width: 100vw;
     height: 100vh;
     margin: 0px;
     padding: 0px; 
     display: flex;
+    justify-content: center;
     align-items: center;
 }
