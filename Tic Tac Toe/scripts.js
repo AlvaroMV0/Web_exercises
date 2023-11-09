@@ -1,4 +1,4 @@
-th 
+
 function myFunction(id) {
     var x = document.getElementById(id);
     if (x.style.display === "none") {
