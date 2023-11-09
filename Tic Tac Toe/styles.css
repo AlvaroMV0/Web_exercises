@@ -1,10 +1,30 @@
 table {
     width: 80vh;
     height: 80vh;
+    border-collapse: collapse;  
+    table-layout: fixed;
 }
-tr:nth-child(0) td:nth-child(0) {
-    background-color: lightblue;
-  }
+th {
+    width: 32vh;
+    height: 32vh;
+}
+
+
+#t5 {
+    border: 5px solid black;
+}
+
+#t2 , #t8 {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+#t4 , #t6 {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+
 body{  
     width: 100vw;
     height: 100vh;
