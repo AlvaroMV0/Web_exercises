@@ -46,15 +46,14 @@ function show_unshow(i) {
   var x = document.getElementById("x"+i);
   if(x.style.display == "none" && y.style.display == "none"){
     if(turno == 'x' ){
-        if (x.style.display == "none") {  x.style.display = "block";    }
+        if (x.style.display == "none") {  x.style.display = "block";  }
     } else {
-        if (y.style.display == "none") {  y.style.display = "block";    } 
+        if (y.style.display == "none") {  y.style.display = "block";  } 
     }
     determinarTurno();
     checkWin();
   }
 }
-
 
 
 reset();
