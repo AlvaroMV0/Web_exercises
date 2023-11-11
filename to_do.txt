@@ -1,0 +1,14 @@
+_ Fix the layour of the grid, borders are fine the problem is the 
+  placement of the cells.
+
+_ Expand all the funcionts and the logic of the game 
+
+_ Add button to reset 
+
+_ Add nice score to puntuation 
+
+_ Add music?
+
+_ Add socials and contact
+
+_ 

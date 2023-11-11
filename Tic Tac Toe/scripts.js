@@ -1,34 +1,41 @@
-var turno = 0;
+let turno = '';
 
 
 function reset(){
-  var x = document.getElementsByClassName("x");
-  var y = document.getElementsByClassName("y");
-  x.style.display = "none";
-  y.style.display = "none";
+  for(let i = 1 ; i<10 ; i++){
+    var x = document.getElementById("x"+i);
+    var y = document.getElementById("o"+i);
+    x.style.display = "none";
+    y.style.display = "none";
+  }
 }
 
 
 function determinarTurno(){
-
+   if (turno == 'x'){
+    turno = 'o';
+   } else {
+    turno = 'x';
+   }
 }
 
-function show_unshow() {
-  if(turno == 1 ){
-  var x = document.getElementById("x1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none"; turno --;
-  } 
-} else {
-  var y = document.getElementById("o1");
-  if (y.style.display === "none") {
-    y.style.display = "block";
-  } else {
-    y.style.display = "none";turno ++;
+function show_unshow(i) {
+  if(x.style.display == "none" && y.style.display == "none"){
+    if(turno == 'x' ){
+        var x = document.getElementById("x"+i);
+        if (x.style.display == "none") {
+        x.style.display = "block";
+        }
+    } else {
+        var y = document.getElementById("o"+i);
+        if (y.style.display == "none") {
+        y.style.display = "block"; 
+        } 
+    }
+    determinarTurno();
   }
-  
 }
-}
+
+
+reset();
 

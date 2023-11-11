@@ -83,7 +83,6 @@ th {
     height: 75%;
     background-color: black;
     border-radius: 100%;
-    display: none;
 }
 
 .o:after, .o:before{
