@@ -20,7 +20,7 @@ th {
     width: 32vh;
     height: 32vh;
     content:" ";
-    
+    cursor: pointer;
 }
 
 #t5 {
