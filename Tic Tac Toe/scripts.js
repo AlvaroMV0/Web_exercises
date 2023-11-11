@@ -12,7 +12,7 @@ var t9 = document.getElementById("t9");
 
 function checkWin(){
   
-  if(t1 == t2 == t3){
+  if(t1.innerHTML == t2.innerHTML == t3){
     if(turno == 'x'){
       console.log("winns X");
     } else {
@@ -46,23 +46,15 @@ function show_unshow(i) {
   var x = document.getElementById("x"+i);
   if(x.style.display == "none" && y.style.display == "none"){
     if(turno == 'x' ){
-        if (x.style.display == "none") {  x.style.display = "block";  writeDiv(i);  }
+        if (x.style.display == "none") {  x.style.display = "block";    }
     } else {
-        if (y.style.display == "none") {  y.style.display = "block";  writeDiv(i);  } 
+        if (y.style.display == "none") {  y.style.display = "block";    } 
     }
     determinarTurno();
     checkWin();
   }
 }
 
-function writeDiv(i){
-    var t = document.getElementById("t"+i);
-    if(turno == 'x'){
-      t = 'x';
-    } else {
-      t = 'o';
-    }
-}
 
 
 reset();
