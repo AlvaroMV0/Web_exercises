@@ -7,6 +7,9 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
+
+    <!-- TABLA -->
+    <div class="table-container">
     <table>
         <tr>
             <th id="t1"  onclick="show_unshow(1)" > <div id="x1" class="x"> </div> <div id="o1" class="o"> </div> </th>
@@ -24,6 +27,11 @@
             <th id="t9"  onclick="show_unshow(9)" > <div id="x9" class="x"> </div> <div id="o9" class="o"> </div> </th>
         </tr>
       </table>
-      <button onclick="reset()"> Reset</button>
+      </div>
+      <!-- FIN TABLA -->
+
+      <div id="buttonReset" onclick="reset()"> Reset</div>
+      <div id="winLetter"></div>
+
 </body>
 </html>

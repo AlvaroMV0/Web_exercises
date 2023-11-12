@@ -9,7 +9,7 @@ body{
 }
 
 
-
+/*  TABLA Y CELDAS  */
 table {
     width: 80vh;
     height: 80vh;
@@ -20,7 +20,6 @@ th {
     width: 32vh;
     height: 32vh;
     cursor: pointer;
-    
 }
 
 #t5 {
@@ -37,10 +36,17 @@ th {
     border-bottom: 5px solid black;
 }
 
+#table-container{
+    
+  overflow-x: auto;
+}
+
+
+/* ----------------------------- */
 
 
 
-
+/* FIGURA X */
 .x {
     position: relative;
     left: 50%;
@@ -49,7 +55,6 @@ th {
     height: 90%;
     display: none;
 }
-
 
 .x:before, .x:after {
     position: absolute;
@@ -64,17 +69,17 @@ th {
 
 .x:before {
     transform: rotate(45deg);
-    
 }
 
 .x:after {
     transform: rotate(-45deg);
 }
+/* ----------------------------- */
 
 
 
 
-
+/* FIGURA O */
 .o {
     position: relative;
     left: 50%;
@@ -96,4 +101,38 @@ th {
     border-radius: 100%;
     background-color: rgb(255, 255, 255);
 }
+/* ----------------------------- */
 
+
+
+
+/* CARTEL SI ALGUIEN GANA */
+#winLetter {
+    background-color: red;
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+/* ----------------------------- */
+
+
+
+
+
+/* BOTON PARA REINCIAR */
+#buttonReset {
+    width: 20vw;
+    height: 20vh;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%); 
+
+    text-align: center;
+}
+
+/* ----------------------------- */

@@ -1,14 +1,8 @@
 let turno = '';
 var arr = [['1','2','3'],['4','5','6'],['7','8','9']];
-var t1 = document.getElementById("t1");
-var t2 = document.getElementById("t2");
-var t3 = document.getElementById("t3");
-var t4 = document.getElementById("t4");
-var t5 = document.getElementById("t5");
-var t6 = document.getElementById("t6");
-var t7 = document.getElementById("t7");
-var t8 = document.getElementById("t8");
-var t9 = document.getElementById("t9");
+var someOneWin = false;
+
+
 
 function checkWin(){
   
@@ -26,9 +20,14 @@ function checkWin(){
     }
   }
 }
+
+
+
 function wins(){
   if(turno == 'x'){ console.log("winns X"); } else { console.log("winns O"); }
+  someOneWin = true;
 }
+
 
 
 function reset(){
@@ -38,7 +37,9 @@ function reset(){
     x.style.display = "none";
     y.style.display = "none";
   } 
+  someOneWin = false;
 }
+
 
 
 function determinarTurno(){
@@ -49,9 +50,12 @@ function determinarTurno(){
    }
 }
 
+
+
 function show_unshow(i) {
   var y = document.getElementById("o"+i);
   var x = document.getElementById("x"+i);
+  if (!someOneWin){
   if(x.style.display == "none" && y.style.display == "none"){
     if(turno == 'x' ){
         if (x.style.display == "none") {  x.style.display = "block";  }
@@ -62,12 +66,13 @@ function show_unshow(i) {
     checkWin();
     determinarTurno();
   }
+ }
 }
 
+
+
 function upadteBoard(i){
-  
   switch(i){
-    
     case 1:
       if(turno == 'x'){arr[0][0] = 'x' ;} else {arr[0][0] = 'o';}
       break;
@@ -95,9 +100,7 @@ function upadteBoard(i){
     case 9:
       if(turno == 'x'){arr[2][2] = 'x'  ;} else {arr[2][2] ='o';} 
       break; 
-
   }
-
 }
 
 
