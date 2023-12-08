@@ -1,3 +1,5 @@
+
+var winletter = document.getElementById("winLetter");
 let turno = '';
 var arr = [['1','2','3'],['4','5','6'],['7','8','9']];
 var someOneWin = false;
@@ -24,9 +26,9 @@ function checkWin(){
 
 
 function wins(){
-  if(turno == 'x'){ console.log("winns X"); } else { console.log("winns O"); }
   someOneWin = true;
-  document.getElementById("winLetter").innerHTML = turno + " winns !";
+  winletter.style.display = "block";
+  winletter.innerHTML = turno.toUpperCase() + " winns !";
 }
 
 
@@ -39,7 +41,8 @@ function reset(){
     y.style.display = "none";
   } 
   someOneWin = false;
-  document.getElementById("winLetter").innerHTML = "";
+  winletter.style.display = "none";
+  winletter.innerHTML = "";
 }
 
 
