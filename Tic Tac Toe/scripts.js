@@ -26,6 +26,7 @@ function checkWin(){
 function wins(){
   if(turno == 'x'){ console.log("winns X"); } else { console.log("winns O"); }
   someOneWin = true;
+  document.getElementById("winLetter").innerHTML = turno + " winns !";
 }
 
 
@@ -38,6 +39,7 @@ function reset(){
     y.style.display = "none";
   } 
   someOneWin = false;
+  document.getElementById("winLetter").innerHTML = "";
 }
 
 
@@ -52,7 +54,7 @@ function determinarTurno(){
 
 
 
-function show_unshow(i) {
+function show(i) {
   var y = document.getElementById("o"+i);
   var x = document.getElementById("x"+i);
   if (!someOneWin){
@@ -80,7 +82,7 @@ function upadteBoard(i){
       if(turno == 'x'){arr[0][1] = 'x' ;} else {arr[0][1] = 'o';} 
       break;
     case 3:
-      if(turno == 'x'){arr[0][2] = 'x' } else {arr[0][2] = 'o';}
+      if(turno == 'x'){arr[0][2] = 'x' ;} else {arr[0][2] = 'o';}
       break;
     case 4:
       if(turno == 'x'){arr[1][0] = 'x' ;} else {arr[1][0] = 'o';} 

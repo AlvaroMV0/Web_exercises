@@ -16,24 +16,29 @@ table {
     border-collapse: collapse;  
     table-layout: fixed;
 }
-th {
+th, td {
     width: 32vh;
     height: 32vh;
     cursor: pointer;
+    z-index: 10;
 }
 
 #t5 {
     border: 5px solid black;
+    
+    border-radius: 50%;
 }
 
 #t2 , #t8 {
     border-left: 5px solid black;
     border-right: 5px solid black;
+    border-radius: 50%;
 }
 
 #t4 , #t6 {
     border-top: 5px solid black;
     border-bottom: 5px solid black;
+    border-radius: 50%;
 }
 
 #table-container{
@@ -110,11 +115,13 @@ th {
 #winLetter {
     background-color: red;
     width: 25vw;
-    height: 25vh;
+    height: 5vh;
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%); 
+    text-align: center;
+    justify-content: center;
 }
 /* ----------------------------- */
 
@@ -131,8 +138,26 @@ th {
     top: 50%;
     left: 80%;
     transform: translate(-50%, -50%); 
-
+    font-size: 100px;
     text-align: center;
+    font-style: arial ;
+}
+
+/* ----------------------------- */
+
+
+
+
+
+/* Hover animation on cell  */
+
+th:hover{
+    animation-name: onhover;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes onhover {
+  to {background-color: rgb(239, 247, 253);}
 }
 
 /* ----------------------------- */
