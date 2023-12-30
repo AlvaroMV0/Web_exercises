@@ -106,33 +106,29 @@ body {
     height: 50px;
     width: 50px;
     border-radius: 25%;
-    transition: transform 0.2s linear;
+    border-color: rgba(0, 0, 0, 0.356);
     justify-content: center;
     position: absolute;
     top:0px;
     right: 0px;
 }
-
-.minimize:hover {
-    transform: rotate(90deg);
-}
-
 #x{
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.1s ease;
+    transition: transform 1s cubic-bezier(.04,.85,1,1);
 }
 #x::after,
 #x::before{
-    background-color: rgb(14, 13, 13);
     content: '';
     position: absolute;
     width: 70%;
     height: 2px;
+    background-color: #333;
 }
-#x:hover {
-    transform: scale(2);
+.minimize:hover #x {
+    transform: rotate(450deg);
 }
 #x::before {
     transform: rotate(45deg);
@@ -141,8 +137,3 @@ body {
 #x::after {
   transform: rotate(-45deg);
 }
-
-@keyframes example {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(90deg);}
-  }
