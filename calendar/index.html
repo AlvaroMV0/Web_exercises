@@ -5,13 +5,13 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Calendar</title>
      <link rel="stylesheet" href="styles.css">
-     <script src="myscripts.js"></script>
+     <script src="scripts.js"></script>
   </head>
 <body>  
 
   <div id="container">
     <div id="leftPanel">
-      <button title="x" class="minimize" type="button"><div id="x"></div></button>
+      <button title="x" class="minimize" type="button" onclick="minimizeAction('leftPanel')"><div id="x"></div></button>
 
     </div>
     <div id="mainPanel">
@@ -45,7 +45,7 @@
 
     </div>
     <div id="rightPanel">
-      <button title="x" class="minimize" type="button"><div id="x"></div></button>
+      <button title="x" class="minimize" type="button" onclick="minimizeAction('rightPanel')"><div id="x"></div></button>
     </div>
   </div>
 
