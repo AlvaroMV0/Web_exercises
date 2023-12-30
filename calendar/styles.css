@@ -30,7 +30,8 @@ body {
     content: "";
     width: 22%;
     height: 100%;
-    order: 1; 
+    order: 1;
+    position: relative; 
 }
 
 /* ---------- */
@@ -70,13 +71,13 @@ body {
 .days {
     flex: 1;
     text-align: center;
-    line-height: 1.;
+    line-height: 1.8;
     border: solid 0.5px white ;
     vertical-align: middle;
 
     font-weight: bold;
     font-family: cursive;
-    font-size: xx-large;
+    font-size: x-large;
     color: white;
 
 }
@@ -96,3 +97,52 @@ body {
 }
 
 
+
+/* --- Buttons --- */
+
+.minimize {
+    background-color: rgba(0, 0, 0, 0);
+    content: '';
+    height: 50px;
+    width: 50px;
+    border-radius: 25%;
+    transition: transform 0.2s linear;
+    justify-content: center;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+
+.minimize:hover {
+    transform: rotate(90deg);
+}
+
+#x{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease;
+}
+#x::after,
+#x::before{
+    background-color: rgb(14, 13, 13);
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+}
+#x:hover {
+    transform: scale(2);
+}
+#x::before {
+    transform: rotate(45deg);
+}
+
+#x::after {
+  transform: rotate(-45deg);
+}
+
+@keyframes example {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+  }
