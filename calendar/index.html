@@ -10,9 +10,9 @@
 <body>  
 
   <div id="container">
-    <div id="leftPanel">
-      <button title="x" class="minimize" type="button" onclick="minimizeAction('leftPanel')"><div id="x"></div></button>
-
+    <div id="leftPanel" >
+      <button title="x" class="minimize" type="button" onclick="closeDiv('leftPanel')"><div id="x"></div></button>
+      <button title=">" class="maximize" type="button" onclick="openDiv('leftPanel')"><div id=">"></div></button>
     </div>
     <div id="mainPanel">
 
@@ -45,7 +45,7 @@
 
     </div>
     <div id="rightPanel">
-      <button title="x" class="minimize" type="button" onclick="minimizeAction('rightPanel')"><div id="x"></div></button>
+      <button title="x" class="minimize" type="button" onclick="closeDiv('rightPanel')"><div id="x"></div></button>
     </div>
   </div>
 

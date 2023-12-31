@@ -1,5 +1,9 @@
-function  minimizeAction(x){
-    let miDiv = document.getElementById(x);
-    miDiv.style.display = "none";
+function  closeDiv(x){
+    let divMod = document.getElementById(x);
+    divMod.classList.add('closed');
+}
 
+function  openDiv(x){
+    let divMod = document.getElementById(x);
+    divMod.classList.remove('closed');
 }

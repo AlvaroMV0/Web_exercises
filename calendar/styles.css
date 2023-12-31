@@ -32,6 +32,7 @@ body {
     height: 100%;
     order: 1;
     position: relative; 
+    transition: width 0.5s ease;
 }
 
 /* ---------- */
@@ -43,6 +44,7 @@ body {
     content: "";
     width: 25%;
     height: 100%; order: 3;
+    transition: width 0.5s ease;
 }
 
 /* ---------- */
@@ -58,6 +60,7 @@ body {
     order: 2; 
     display: flex;
     flex-direction: column;
+    transition: width 0.5s ease;
 }
 
 /* ---------- */
@@ -114,8 +117,7 @@ body {
 }
 .minimize:active {
     background-color: rgba(0, 0, 0, 0.089);
-    transform: translateY(4px);
-  }
+}
 #x{
     background-color: black;
     display: flex;
@@ -131,7 +133,7 @@ body {
     height: 2px;
     background-color: #333;
 }
-.minimize:hover #x {
+.minimize:hover #x{
     transform: rotate(450deg);
 }
 #x::before {
@@ -141,4 +143,6 @@ body {
 #x::after {
   transform: rotate(-45deg);
 }
-
+.closed {
+    width: 0% !important;
+}
