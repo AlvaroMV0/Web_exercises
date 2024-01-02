@@ -104,6 +104,8 @@ body {
 
 /* --- Buttons --- */
 
+/* --- Minimize --- */
+
 .minimize {
     background-color: rgba(0, 0, 0, 0);
     content: '';
@@ -143,6 +145,22 @@ body {
 #x::after {
   transform: rotate(-45deg);
 }
+
+
+
+/* ---- maxmize ---- */
+.maximize {
+    display: block!important;
+    position: sticky;
+    right: 0px;
+    height: 50px;
+    width: 500px;
+    z-index: 0;
+}
+
+
+/* ---- closed class ---- */
 .closed {
     width: 0% !important;
+    display: none; 
 }
