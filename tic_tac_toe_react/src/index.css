@@ -1,0 +1,61 @@
+.x {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.x::before,
+.x::after {
+  content: '';
+  position: absolute;
+  right: 50%;
+  width: 6px;
+  border-radius: 20%;
+  height: 100%;
+  background-color: black;
+}
+
+.x::before {
+  transform: rotate(45deg);
+}
+
+.x::after {
+  transform: rotate(-45deg);
+}
+
+
+
+
+/* O figure */
+
+.o {
+  background-color: black;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.o::after{
+  content:'';
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: inherit;
+  background-color: rgb(255, 255, 255);
+}
+
+
+/* Board */
+
+
+#board {
+  
+}
+
+
+.grid_item {
+
+}
