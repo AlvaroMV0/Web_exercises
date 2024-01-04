@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.board {
+  position: relative;
+  width: 100%; 
+  border: 3px solid rgba(107, 107, 107, 0.479);
+    
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.medium_cell {
+  background-color: lightgray;
+  text-align: center;
+  border: 1px solid gray;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.smaller_cell{
+  flex: 1;
+  
+  min-width: 50px;
+  min-height: 50px;
+  background-color: rgb(37, 37, 37);
+}
+
+.smaller_cell.s3{
+  background-color: red;
+}
